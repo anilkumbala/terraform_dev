@@ -3,6 +3,6 @@ resource "aws_s3_bucket" "b" {
 
   tags = {
     Name        = "anil-bucket-with-terrafrom"
-    Environment = "Dev"
+    Environment = "dev"
   }
 }

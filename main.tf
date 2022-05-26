@@ -2,7 +2,7 @@
 provider "aws" {
     access_key = "${var.aws_access_key}"
     secret_key = "${var.aws_secret_key}"
-    region = "${var.aws_region}"
+    region     = "${var.aws_region}"
 }
 
 terraform {
@@ -20,7 +20,7 @@ resource "aws_vpc" "default" {
     enable_dns_hostnames = true
     tags = {
         Name = "${var.vpc_name}"
-	Owner = "Sreeharsha Veerapalli"
+	Owner = "anil_kumbala"
 	environment = "${var.environment}"
     }
 }
